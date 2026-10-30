@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <AssemblyName>ChiselGlassVisibility</AssemblyName>
+    <VintageStoryPath Condition="'$(VintageStoryPath)' == ''">E:\Games\Vintagestory</VintageStoryPath>
+    <RestoreIgnoreFailedSources>true</RestoreIgnoreFailedSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI"><HintPath>$(VintageStoryPath)\VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSSurvivalMod"><HintPath>$(VintageStoryPath)\Mods\VSSurvivalMod.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="OpenTK.Graphics"><HintPath>$(VintageStoryPath)\Lib\OpenTK.Graphics.dll</HintPath><Private>false</Private></Reference>
+    <None Include="modinfo.json;assets\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

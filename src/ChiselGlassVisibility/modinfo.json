@@ -1,0 +1,12 @@
+{
+  "type": "code",
+  "modid": "chiselglassvisibility",
+  "name": "Chisel Glass Visibility",
+  "authors": ["Chisel Glass Visibility contributors"],
+  "description": "Makes nearby glass easier to see while holding chiselling tools. Client-side; QP's Chisel Tools is optional.",
+  "version": "1.0.0",
+  "side": "Client",
+  "requiredOnClient": false,
+  "requiredOnServer": false,
+  "dependencies": { "game": "1.22.7" }
+}
